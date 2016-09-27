@@ -272,7 +272,7 @@ is to press a keyboard shortcut to build, launch, and debug the project.
 create a launch configuration file.
 
 2. It tries to pick up settings from package.json. These would work for a stock node
-project, but we are using *Babel* to enable ES6 development. So we need to make a few
+project, but we are using *Babel* to enable ES6 development, so we need to make a few
 changes. (find attached launch.json)
 
 3. Now if you press <kbd>f5</kbd>, the project will build and start debugging.
