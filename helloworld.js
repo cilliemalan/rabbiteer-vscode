@@ -9,6 +9,7 @@ printstuff((b - a) / 2);
 
 function printstuff(cnt) {
     for (let i = 0; i < cnt; i++) {
-        console.log(`hello world ${i}`);
+        let message = `hello world ${i}`;
+        console.log(message);
     }
 }
