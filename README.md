@@ -226,6 +226,34 @@ lets it know that the project has javascript.
 
 3. Of course linting is working as per the previous installation of the ESLint plugin.
 
+## Javascript intellisense
+So VS Code will by default pick up various intellisense for javascript. However, we
+can make things *much* better.
+
+1. We use a tool called *typings* to add better code completion for javascript. It is
+designed for typescript, but VS Code will pick up the typings and autocomplete for
+javascript as well.
+
+2. We have sneakily installed typings along with all the other npm deps. We'll use that
+now to add typings for the dependencies we use.
+
+3. If we look inside the `package.json` file we see that there are basically
+three dependencies: `express`, `body-parser`, and `opn`. So lets install
+typings for those. Open a terminal window and type:
+```
+npm run typings install opn body-parser express --save
+```
+
+4. Now you'll have nice autocomplete for imported types. Open up `server.js` and mouse
+over `let app = express()`.<br>
+![hey](pitchers/lookiehere.png)<br>
+You'll note it now shows that `app` has a type.
+
+5. Now type `json()`. You'll note that it shows usage:<br>
+![nice](pitchers/wow.png)<br>
+And even shows documentation for the object that goes inside it!<br>
+![jikes](pitchers/neat.PNG)<br>
+
 ### Spacing for js files
 4. VS Code automatically picks up the space/tabs and amount of spaces (see bottom right).
 
