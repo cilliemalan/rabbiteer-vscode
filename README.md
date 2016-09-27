@@ -263,8 +263,8 @@ node_modules\.bin\typings install env~node --global --save
 ### Spacing for js files
 4. VS Code automatically picks up the space/tabs and amount of spaces (see bottom right).
 
-5. However, if you create a new file, it will go back to 4 spaces. We can change this default
-for our project.
+5. However, if you create a new file, it will go back to 4 spaces. We can change this
+default for our project.
 
 6. Create a settings file by command palette-ing `Workspace Settings`.
 
