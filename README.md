@@ -241,7 +241,7 @@ now to add typings for the dependencies we use.
 three dependencies: `express`, `body-parser`, and `opn`. So lets install
 typings for those. Open a terminal window and type:
 ```
-npm run typings install opn body-parser express --save
+node_modules\.bin\typings install opn body-parser express --save
 ```
 
 4. Now you'll have nice autocomplete for imported types. Open up `server.js` and mouse
@@ -253,6 +253,12 @@ You'll note it now shows that `app` has a type.
 ![nice](pitchers/wow.png)<br>
 And even shows documentation for the object that goes inside it!<br>
 ![jikes](pitchers/neat.PNG)<br>
+
+6. Lastly, we'll want to add typings for *Node*. This is different
+seeing as node is *global*. So we install typings like so:
+```
+node_modules\.bin\typings install env~node --global --save
+```
 
 ### Spacing for js files
 4. VS Code automatically picks up the space/tabs and amount of spaces (see bottom right).
