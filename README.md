@@ -226,6 +226,48 @@ lets it know that the project has javascript.
 
 3. Of course linting is working as per the previous installation of the ESLint plugin.
 
+### Spacing for js files
+4. VS Code automatically picks up the space/tabs and amount of spaces (see bottom right).
+
+5. However, if you create a new file, it will go back to 4 spaces. We can change this default
+for our project.
+
+6. Create a settings file by command palette-ing `Workspace Settings`.
+
+7. The editor will open the default settings (left) and the workspace settings (right).
+The workspace settings autocomplete so you can close the global dettings.
+
+8. Set tab size to 2 spaces by adding `"editor.tabSize": 2`. Now if you create a new js
+file it will default to 2 spaces.
+
+### Tasks
+You may have noticed that both server and clientside javascript needs to be compiled
+and packed and whatnot. This is done by running `npm run build`.
+
+However, it would be super convenient if we could just run and build and compile via
+tasks in the command palette.
+
+1. Let's configure a build task. Press <kbd>ctrl+shift+b</kbd>. That's the shortcut for
+*build*. The editor will moan that it doesn't have a build task and allow you to create
+one.
+
+2. Create a task configuration for `npm` (note: even though we use gulp, we don't want
+to be bound to it indefinitely, but we are using a node project so we might as well
+use npm).
+
+3. This will create a task configuration file with three tasks. To run a task press
+<kbd>ctrl+p</kbd> and start typing `task `. It will autocomplete these three tasks.
+
+4. Now we need to add a build task, so add a task that runs `npm run build` and call
+it `build`. Also add a key for `isBuildCommand`.
+
+5. Now if you press <kbd>ctrl+shift+b</kbd> it will compile all the various needed files.
+
+### Launching
+This may all seem a bit superflous in light of the npm extension, but the purpose will
+become apparent once we want to start launching and debugging. What we *really* want
+is to press a keyboard shortcut to build, launch, and debug the project. 
+
 # Links
 * I pilfered this: [https://github.com/Microsoft/vscode-tips-and-tricks](https://github.com/Microsoft/vscode-tips-and-tricks)
 * Awesome extensions: [https://github.com/viatsko/awesome-vscode](https://github.com/viatsko/awesome-vscode)
