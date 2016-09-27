@@ -109,6 +109,14 @@ area.
 
 10. <kbd>ctrl+i</kbd> selects the current line
 
+## git
+VS Code has rudementary but very helpful git support.
+
+1. The git panel shows staged and unstaged files. It allows you to commit, push, pull, etc.
+
+2. when you click on a file it will show a diff.
+![](pitchers/differencing.PNG)
+
 ## Snippets
 For each language there are snippets available.
 
