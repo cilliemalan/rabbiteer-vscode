@@ -72,7 +72,19 @@ Before we move on it may be helpful to clone the project if you haven't already.
 
 1. Open the folder for the project in VS Code.
 
-2. Open a command window by pressing <kbd>ctrl+shift+c</kbd>
+2. Switch to the `vs-code` branch in the bottom left corner<br>
+![switching](pitchers/switchbranch1.PNG)<br>
+![switching](pitchers/switchbranch2.PNG)
+
+### Getting the project set up quickly
+
+1. Press <kbd>ctrl+`</kbd> to open the integrated terminal window.<br>
+![](pitchers/terming.PNG)<br>
+You may also press <kbd>ctrl+shift+c</kbd> to open an external terminal window.
+
+2. run `npm install`
+
+While `npm install` is doing its thing, we can look at some other features.
 
 ## some more editor features
 
