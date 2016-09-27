@@ -268,6 +268,15 @@ This may all seem a bit superflous in light of the npm extension, but the purpos
 become apparent once we want to start launching and debugging. What we *really* want
 is to press a keyboard shortcut to build, launch, and debug the project. 
 
+1. From the command palette, `Debug: Open launch.json` and select `node.js`. This will
+create a launch configuration file.
+
+2. It tries to pick up settings from package.json. These would work for a stock node
+project, but we are using *Babel* to enable ES6 development. So we need to make a few
+changes. (find attached launch.json)
+
+3. Now if you press <kbd>f5</kbd>, the project will build and start debugging.
+
 # Links
 * I pilfered this: [https://github.com/Microsoft/vscode-tips-and-tricks](https://github.com/Microsoft/vscode-tips-and-tricks)
 * Awesome extensions: [https://github.com/viatsko/awesome-vscode](https://github.com/viatsko/awesome-vscode)
