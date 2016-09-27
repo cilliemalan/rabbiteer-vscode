@@ -109,6 +109,16 @@ area.
 
 10. <kbd>ctrl+i</kbd> selects the current line
 
+## Snippets
+For each language there are snippets available.
+
+1. Snippet extensions may be installed, searching for "snippet" `ext install snippet`.
+2. Your own snippets may be added too by going to `Open User Snippets`.<br>
+The snippet source:<br>
+![snippet](pitchers/asnippet.PNG)<br>
+And put it in javascript:<br>
+![amazeballs](pitchers/snippeting.gif)
+
 ## git
 VS Code has rudementary but very helpful git support.
 
@@ -130,16 +140,6 @@ A merge is needed:<br>
 ![](pitchers/mergeneeded.PNG)<br>
 Meging the file:<br>
 ![](pitchers/yuck.PNG)
-
-## Snippets
-For each language there are snippets available.
-
-1. Snippet extensions may be installed, searching for "snippet" `ext install snippet`.
-2. Your own snippets may be added too by going to `Open User Snippets`.<br>
-The snippet source:<br>
-![snippet](pitchers/asnippet.PNG)<br>
-And put it in javascript:<br>
-![amazeballs](pitchers/snippeting.gif)
 
 ## Extensibility
 VS Code is trememdnously extensible.
