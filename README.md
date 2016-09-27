@@ -124,6 +124,7 @@ and outgoing commits (your commits that have not yet been pushed).<br>
 
 4. Clicking this button will merge and push, synchronizing your changes to the remote git repo.
 
+5. VS Code can also merge in the case of conflicts.
 
 ## Snippets
 For each language there are snippets available.
