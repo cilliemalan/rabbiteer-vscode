@@ -124,7 +124,12 @@ and outgoing commits (your commits that have not yet been pushed).<br>
 
 4. Clicking this button will merge and push, synchronizing your changes to the remote git repo.
 
-5. VS Code can also merge in the case of conflicts.
+5. VS Code can also help with conflicts.<br>
+![](pitchers/whoops.PNG)<br>
+A merge is needed:<br>
+![](pitchers/mergeneeded.PNG)<br>
+Meging the file:<br>
+![](pitchers/yuck.PNG)
 
 ## Snippets
 For each language there are snippets available.
