@@ -9,7 +9,7 @@
             "stopOnEntry": false,
             "args": [],
             "cwd": "${workspaceRoot}",
-            "preLaunchTask": "compile",
+            "preLaunchTask": "build",
             "runtimeExecutable": null,
             "runtimeArgs": [],
             "env": {
