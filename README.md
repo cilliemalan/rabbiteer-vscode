@@ -117,6 +117,14 @@ VS Code has rudementary but very helpful git support.
 2. when you click on a file it will show a diff.
 ![](pitchers/differencing.PNG)
 
+3. VS Code pereodically does a fetch in the background, downloading new commits. On the bottom
+right corner, the number of incoming commits (commits that have been pushed by others and fetched)
+and outgoing commits (your commits that have not yet been pushed).<br>
+![](pitchers/gitstatus.PNG)
+
+4. Clicking this button will merge and push, synchronizing your changes to the remote git repo.
+
+
 ## Snippets
 For each language there are snippets available.
 
