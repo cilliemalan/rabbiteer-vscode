@@ -250,7 +250,7 @@ over `let app = express()`.<br>
 You'll note it now shows that `app` has a type.
 
 5. Now type `json()`. You'll note that it shows usage:<br>
-![nice](pitchers/wow.png)<br>
+![nice](pitchers/wow.PNG)<br>
 And even shows documentation for the object that goes inside it!<br>
 ![jikes](pitchers/neat.PNG)<br>
 
