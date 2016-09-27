@@ -1,4 +1,4 @@
-# VS CODE
+# VS CODE Basics
 *VS code* or *Visual Studio Code* is a lightweight IDE. It works especially well.
 
 1. Open up visual studio code by pressing windows button and typing in `Code`.
@@ -70,9 +70,11 @@ previewed files.
 ## clone the project
 Before we move on it may be helpful to clone the project if you haven't already.
 
-1. Open the folder for the project in VS Code.
+1. Clone the project `https://github.com/RetroRabbit/rabbiteer-2016.git`
 
-2. Switch to the `vs-code` branch in the bottom left corner<br>
+2. Open the folder for the project in VS Code.
+
+3. Switch to the `vs-code` branch in the bottom left corner<br>
 ![switching](pitchers/switchbranch1.PNG)<br>
 ![switching](pitchers/switchbranch2.PNG)
 
@@ -120,7 +122,7 @@ And put it in javascript:<br>
 ![amazeballs](pitchers/snippeting.gif)
 
 ## git
-VS Code has rudementary but very helpful git support.
+VS Code has rudimentary but very helpful git support.
 
 1. The git panel shows staged and unstaged files. It allows you to commit, push, pull, etc.
 
@@ -159,12 +161,45 @@ shown as errors/warnings in the bottom right corner and problems pane
 
 1. Install by running in the *Quick Command* typing `ext install vscode-eslint`
 
+2. Remember to enable it. You will have to restart VS Code to enable it.
+
+3. VS Code will now respect the `.eslintrc.yml` file and lint all our javascript!<br>
+![linting probs](pitchers/linterrors.png)
+4. Hint: you may fix formatting problems by pressing <kbd>ctrl+shift+f</kbd>
+
+### NPM
+remember how we opened the terminal to run `npm install`? Why don't we just integrated
+NPM directly into VS Code?
+
+1. The NPM extension allows that.
+2. After it is installed and enabled, npm commands will be available from the *Command
+Palette*.
+3. Try `npm start`. NPM will build and run and open in your web browser.<br>
+![starting](pitchers/npmstart.PNG)<br>
+Started:<br>
+![starting](pitchers/npmstarted.PNG)
+4. Stop again by typing `npm terminate`<br>
+![starting](pitchers/npmterming.PNG)<br>
+and selecting the process it shows.<br>
+![starting](pitchers/npmtermwhat.PNG)<br>
+![starting](pitchers/npmtermed.PNG)<br>
+
+
 ### Slack
 
 1. type `ext install Slack` in *Quick Command*
 2. after enabling open user settings (<kbd>ctrl+shift+p</kbd> it man!)
 
+### VS-Code Icons
+Need some more Icons?
 
+1. install `ext install vscode-icons`
+2. File -> Preferences -> File Icon Theme and select it.
+
+# Editing
+Let's get cracking!
+
+1. By now the project is cloned
 
 ## HTML editing
 
@@ -181,8 +216,15 @@ Try these:
 * `link:css`
 * [cheatsheet](http://docs.emmet.io/cheat-sheet/)
 
+## Javascript editing
+The project uses javascript on the server (node.js) and client (angular).
 
+1. VS Code will automatically know about javascript. The `jsconfig.json` file
+lets it know that the project has javascript.
 
+2. Editing javascript allows for rudimentary intellisense and formatting.
+
+3. Of course linting is working as per the previous installation of the ESLint plugin.
 
 # Links
 * I pilfered this: [https://github.com/Microsoft/vscode-tips-and-tricks](https://github.com/Microsoft/vscode-tips-and-tricks)
